@@ -32,7 +32,10 @@ port.on('open', function () {
 		//res.toString('utf8').substring(2, 8).length > 5 ? console.log(res.toString('utf8').substring(3, 9)) : 0
 
 		//console.log(res.toString('utf8').substring(2, 8).length)
-        var peso = res.toString('utf8').substring(2, 8).replace(/(\d{1})?(\d{8})/, "$1.$2");
+
+		//05/05
+		// var peso = res.toString('utf8').substring(2, 8).replace(/(\d{1})?(\d{8})/, "$1.$2");
+        var peso = res.toString('utf8').substring(0, 8).replace(/(\d{1})?(\d{8})/, "$1.$2");
 		
 		//if(peso != '' && res.toString('utf8').substring(2, 8).length > 5){
 		if(peso != ''){	
